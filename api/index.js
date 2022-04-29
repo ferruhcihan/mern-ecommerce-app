@@ -15,7 +15,8 @@ async function main() {
   await mongoose.connect(process.env.MONGO_URL);
 }
 
-app.use("/api/user", userRouter);
+app.use(express.json());
+app.use("/api/users", userRouter);
 
 app.listen(process.env.PORT || 5000, process.env.HOST, () => {
   console.log("Backend server is running!");
