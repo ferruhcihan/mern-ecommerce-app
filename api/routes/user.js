@@ -1,10 +1,10 @@
 const router = require("express").Router();
 
-router.get("/usertest", (req, res) => {
-  res.send("User test api!");
+router.get("/", (req, res) => {
+  res.send("User Router!");
 });
 
-router.post("/usertest", (req, res) => {
+router.post("/", (req, res) => {
   const { username } = req.body;
   res.send("Your user name is " + username);
 });
