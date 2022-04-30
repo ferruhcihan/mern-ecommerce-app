@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 const userRouter = require("./routes/user");
+const authRouter = require("./routes/auth");
 const productRouter = require("./routes/product");
 const orderRouter = require("./routes/order");
 const cartRouter = require("./routes/cart");
@@ -19,6 +20,7 @@ async function main() {
 }
 
 app.use(express.json());
+app.use("/api/auth", authRouter);
 app.use("/api/users", userRouter);
 app.use("/api/products", productRouter);
 app.use("/api/orders", orderRouter);
