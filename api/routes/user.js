@@ -39,7 +39,7 @@ router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
 });
 
 //GET USER
-router.get("/:id", verifyTokenAndAdmin, async (req, res) => {
+router.get("/find/:id", verifyTokenAndAdmin, async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
     const { password, ...others } = user._doc;
@@ -64,7 +64,6 @@ router.get("/", verifyTokenAndAdmin, async (req, res) => {
 
 //GET USERS STATS
 router.get("/stats", verifyTokenAndAdmin, async (req, res) => {
-  console.log("STATS");
   const date = new Date();
   const lastYear = new Date(date.setFullYear(date.getFullYear() - 1));
   try {
