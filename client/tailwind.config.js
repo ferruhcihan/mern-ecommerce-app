@@ -4,6 +4,10 @@ module.exports = {
     extend: {
       colors: {
         teal: "#008080",
+        gray1: "lightgray",
+      },
+      screens: {
+        xs: "380px",
       },
     },
   },
