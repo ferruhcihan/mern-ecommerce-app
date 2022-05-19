@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html,
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .debug-r {
+    border: 1px solid #ff0000;
+  }
+  .debug-g {
+    border: 1px solid #00ff00;
+  }
+  .debug-b {
+    border: 1px solid #0000ff;
+  }
+}
