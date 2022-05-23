@@ -1,4 +1,6 @@
 import React from "react";
+import { HiOutlineShoppingCart, HiOutlineSearch } from "react-icons/hi";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 const Product = () => {
   return (
@@ -6,7 +8,15 @@ const Product = () => {
       <div className="w-[200px] h-[200px] rounded-full bg-white absolute" />
       <img className="z-10 h-3/4" src="" alt="product-img" />
       <div className="w-full h-full opacity-0 absolute top-0 left-0 bg-[#00000032] z-20 flex items-center justify-center transition-all ease-in-out duration-500 cursor-pointer">
-        <div className="w-10 h-10 rounded-full bg-white flex justify-center items-center m-2 transition-all ease-in-out duration-500 hover:bg-[#e9f5f5] hover:scale-110"></div>
+        <div className="w-10 h-10 rounded-full bg-white flex justify-center items-center m-2 transition-all ease-in-out duration-500 hover:bg-[#e9f5f5] hover:scale-110">
+          <HiOutlineShoppingCart />
+        </div>
+        <div className="w-10 h-10 rounded-full bg-white flex justify-center items-center m-2 transition-all ease-in-out duration-500 hover:bg-[#e9f5f5] hover:scale-110">
+          <HiOutlineSearch />
+        </div>
+        <div className="w-10 h-10 rounded-full bg-white flex justify-center items-center m-2 transition-all ease-in-out duration-500 hover:bg-[#e9f5f5] hover:scale-110">
+          <MdOutlineFavoriteBorder />
+        </div>
       </div>
     </div>
   );
