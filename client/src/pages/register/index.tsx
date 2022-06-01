@@ -11,7 +11,13 @@ const Input = ({ placeholder }: any) => {
 
 const Register = () => {
   return (
-    <div className="flex w-screen h-screen">
+    <div
+      className="flex w-screen h-screen"
+      style={{
+        background:
+          "linear-gradient(#FFFFFF80,#FFFFFF80), url('https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center",
+      }}
+    >
       <div className="w-3/4 p-5 bg-white sm:w-1/4">
         <h1 className="text-2xl font-light">CREATE AN ACCOUNT</h1>
         <form className="flex flex-wrap">
